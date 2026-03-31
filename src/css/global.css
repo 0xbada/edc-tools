@@ -63,6 +63,24 @@ a:hover {
   font-size: 12px;
 }
 
+/* === UserAgent Bar === */
+.ua-bar {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 8px 24px;
+  font-size: 11px;
+  color: var(--text-dim);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+.ua-bar:hover {
+  color: var(--text-muted);
+}
+
 /* === Main === */
 .main {
   max-width: var(--max-width);

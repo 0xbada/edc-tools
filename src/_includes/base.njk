@@ -20,6 +20,21 @@
       {%- endfor %}
     </div>
   </nav>
+  <div class="ua-bar" id="ua-bar" title="Click to copy">
+    <span id="ua-text"></span>
+  </div>
+  <script>
+    (function() {
+      var el = document.getElementById('ua-text');
+      var bar = document.getElementById('ua-bar');
+      el.textContent = navigator.userAgent;
+      bar.addEventListener('click', function() {
+        navigator.clipboard.writeText(navigator.userAgent);
+        el.textContent = 'Copied!';
+        setTimeout(function() { el.textContent = navigator.userAgent; }, 1500);
+      });
+    })();
+  </script>
   <main class="main">
     {{ content | safe }}
   </main>
