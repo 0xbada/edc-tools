@@ -24,7 +24,7 @@ layout: base.njk
   </div>
   <div class="panel">
     <span class="panel-label">Output</span>
-    {% if tool.slug == "json-formatter" %}
+    {% if tool.customOutput %}
     <pre class="panel-output" id="output"></pre>
     {% else %}
     <textarea class="panel-textarea output" id="output" readonly placeholder="Result will appear here..." spellcheck="false"></textarea>

@@ -29,7 +29,8 @@
     "category": "formatter",
     "description": "Format and validate JSON data",
     "keywords": ["json", "format", "validate", "pretty print"],
-    "script": "json-formatter.js"
+    "script": "json-formatter.js",
+    "customOutput": true
   },
   {
     "name": "Timestamp Converter",
@@ -38,5 +39,39 @@
     "description": "Convert between Unix timestamps and human-readable dates",
     "keywords": ["timestamp", "unix", "epoch", "date"],
     "script": "timestamp-converter.js"
+  },
+  {
+    "name": "HTML Entity Encoder/Decoder",
+    "slug": "html-entity",
+    "category": "encoding",
+    "description": "Encode or decode HTML entities",
+    "keywords": ["html", "entity", "escape", "unescape", "amp", "lt", "gt"],
+    "script": "html-entity.js"
+  },
+  {
+    "name": "JWT Decoder",
+    "slug": "jwt-decoder",
+    "category": "encoding",
+    "description": "Decode and inspect JWT tokens",
+    "keywords": ["jwt", "json web token", "decode", "bearer"],
+    "script": "jwt-decoder.js",
+    "customOutput": true
+  },
+  {
+    "name": "UUID Generator",
+    "slug": "uuid-generator",
+    "category": "generator",
+    "description": "Generate random UUID v4 identifiers",
+    "keywords": ["uuid", "guid", "unique id", "random"],
+    "script": "uuid-generator.js"
+  },
+  {
+    "name": "Regex Tester",
+    "slug": "regex-tester",
+    "category": "formatter",
+    "description": "Test regular expressions with live matching",
+    "keywords": ["regex", "regexp", "regular expression", "pattern", "match"],
+    "script": "regex-tester.js",
+    "customOutput": true
   }
 ]
