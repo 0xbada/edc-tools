@@ -98,7 +98,21 @@ export default {
       },
     },
   ],
-  init({ inputEl, outputEl }) {
+  init({ inputEl, outputEl, actionBar }) {
+    // Add color picker button
+    const picker = document.createElement('input');
+    picker.type = 'color';
+    picker.value = '#4ade80';
+    picker.title = 'Pick a color';
+    picker.style.cssText = 'width:38px;height:38px;padding:2px;border:1px solid var(--border);border-radius:6px;background:var(--bg-elevated);cursor:pointer;vertical-align:middle;';
+    picker.addEventListener('input', () => {
+      inputEl.value = picker.value;
+      // Trigger Convert
+      const convertBtn = actionBar.querySelector('.action-btn');
+      if (convertBtn) convertBtn.click();
+    });
+    actionBar.appendChild(picker);
+
     this.customRender = (result, el) => {
       const { rgb, hex, hsl } = result;
       const cssColor = hex;
