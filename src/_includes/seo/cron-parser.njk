@@ -1,0 +1,21 @@
+<h2>Cron Expression Parser란?</h2>
+<p>Cron 표현식은 Linux/Unix 시스템에서 작업을 예약할 때 사용하는 시간 표현 형식입니다. <code>*/5 * * * *</code>처럼 5개 필드로 구성되며, 이 도구는 크론 표현식을 사람이 읽을 수 있는 설명으로 변환하고 다음 5회 실행 시간을 예측합니다.</p>
+
+<div class="faq">
+  <div class="faq-item">
+    <div class="faq-q">Q: 크론 표현식의 5개 필드는 무엇인가요?</div>
+    <div class="faq-a">왼쪽부터 분(0-59), 시(0-23), 일(1-31), 월(1-12), 요일(0-6, 일요일=0) 순서입니다. <code>*</code>는 모든 값, <code>*/N</code>은 N 간격, <code>A-B</code>는 범위, <code>A,B</code>는 목록을 의미합니다.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q: 프리셋 표현식은 어떤 것들이 있나요?</div>
+    <div class="faq-a"><code>@yearly</code>(매년 1/1 0:00), <code>@monthly</code>(매월 1일 0:00), <code>@weekly</code>(매주 일요일 0:00), <code>@daily</code>(매일 0:00), <code>@hourly</code>(매시 0분)를 지원합니다.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q: 6필드(초 포함) 크론도 지원하나요?</div>
+    <div class="faq-a">현재는 표준 5필드 크론만 지원합니다. Spring이나 Quartz에서 사용하는 6-7필드 형식은 첫 번째 초 필드를 제거하고 나머지 5개 필드를 입력해주세요.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q: 다음 실행 시간은 어떤 기준으로 계산되나요?</div>
+    <div class="faq-a">브라우저의 현재 로컬 시간을 기준으로 계산됩니다. 서버의 타임존과 다를 수 있으므로, 실제 크론잡 실행 시간은 서버 타임존을 확인하세요.</div>
+  </div>
+</div>

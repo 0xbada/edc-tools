@@ -73,5 +73,23 @@
     "keywords": ["regex", "regexp", "regular expression", "pattern", "match"],
     "script": "regex-tester.js",
     "customOutput": true
+  },
+  {
+    "name": "Color Converter",
+    "slug": "color-converter",
+    "category": "converter",
+    "description": "Convert colors between HEX, RGB, and HSL formats",
+    "keywords": ["color", "hex", "rgb", "hsl", "converter", "css"],
+    "script": "color-converter.js",
+    "customOutput": true
+  },
+  {
+    "name": "Cron Expression Parser",
+    "slug": "cron-parser",
+    "category": "converter",
+    "description": "Parse cron expressions into human-readable descriptions",
+    "keywords": ["cron", "crontab", "schedule", "parser", "linux"],
+    "script": "cron-parser.js",
+    "customOutput": true
   }
 ]
