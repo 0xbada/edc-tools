@@ -1,0 +1,23 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://tools.devhackdebug.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  {%- for cat in categories %}
+  <url>
+    <loc>https://tools.devhackdebug.com/{{ cat.slug }}/</loc>
+    <priority>0.7</priority>
+  </url>
+  {%- endfor %}
+  {%- for tool in tools %}
+  <url>
+    <loc>https://tools.devhackdebug.com/{{ tool.category }}/{{ tool.slug }}/</loc>
+    <priority>0.9</priority>
+  </url>
+  {%- endfor %}
+</urlset>
