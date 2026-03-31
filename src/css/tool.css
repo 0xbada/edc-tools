@@ -1,0 +1,137 @@
+/* === Tool Header === */
+.tool-header {
+  margin-bottom: 20px;
+}
+.tool-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+}
+.tool-desc {
+  color: var(--text-dim);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* === Action Bar === */
+.action-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.action-btn {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 16px;
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+.action-btn:hover {
+  border-color: var(--border-hover);
+}
+
+/* === Panels === */
+.panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.panel {
+  display: flex;
+  flex-direction: column;
+}
+.panel-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+.panel-textarea {
+  flex: 1;
+  min-height: 200px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.5;
+  resize: vertical;
+}
+.panel-textarea:focus {
+  outline: none;
+  border-color: var(--border-hover);
+}
+.panel-textarea.output {
+  color: var(--accent);
+}
+.panel-textarea.error {
+  color: var(--error);
+}
+
+/* === Custom Output (JSON formatter etc.) === */
+.panel-output {
+  flex: 1;
+  min-height: 200px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.5;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+/* === Common Buttons === */
+.common-bar {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.common-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 14px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+.common-btn:hover {
+  border-color: var(--border-hover);
+  color: var(--text);
+}
+
+/* === SEO Footer === */
+.tool-info {
+  color: var(--text-dim);
+  font-size: 12px;
+  line-height: 1.6;
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .panels {
+    grid-template-columns: 1fr;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
