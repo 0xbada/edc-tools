@@ -1,0 +1,17 @@
+<h2>About Hash Generator</h2>
+<p>Cryptographic hash functions take an input of any size and produce a fixed-length output (digest). This tool supports MD5, SHA-1, SHA-256, and SHA-512. SHA-256 and SHA-512 use the browser's built-in Web Crypto API for fast, native performance. Hashing is a one-way operation — you cannot reverse a hash back to the original input.</p>
+
+<div class="faq">
+  <div class="faq-item">
+    <div class="faq-q">Q: Which hash algorithm should I use?</div>
+    <div class="faq-a">For security purposes, use SHA-256 or SHA-512. MD5 and SHA-1 are considered cryptographically broken and should only be used for checksums or non-security purposes like cache keys.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q: Can I decrypt a hash?</div>
+    <div class="faq-a">No. Hash functions are one-way by design — there is no mathematical way to reverse the process. Tools that "decrypt" hashes actually use precomputed lookup tables (rainbow tables).</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q: Why does MD5 produce a different result than other online tools?</div>
+    <div class="faq-a">Ensure you're comparing the same input encoding. This tool encodes input as UTF-8 before hashing. Some tools may use different encodings, which will produce different hash values for non-ASCII text.</div>
+  </div>
+</div>

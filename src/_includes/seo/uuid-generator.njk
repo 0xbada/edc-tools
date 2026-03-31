@@ -1,0 +1,17 @@
+<h2>About UUID Generator</h2>
+<p>A UUID (Universally Unique Identifier) is a 128-bit identifier that is practically guaranteed to be unique across space and time. This tool generates version 4 UUIDs, which are based on random numbers using the browser's cryptographically secure <code>crypto.randomUUID()</code> API. UUIDs are widely used as database primary keys, session IDs, and distributed system identifiers.</p>
+
+<div class="faq">
+  <div class="faq-item">
+    <div class="faq-q">Q: What is UUID v4?</div>
+    <div class="faq-a">UUID v4 is generated using random or pseudo-random numbers. It's the most commonly used version because it requires no coordination between systems. The format is <code>xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx</code> where <code>4</code> indicates version 4.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q: Can two UUIDs ever collide?</div>
+    <div class="faq-a">Theoretically yes, but the probability is astronomically low. You would need to generate about 2.71 quintillion UUIDs to have a 50% chance of a single collision. For practical purposes, they are unique.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q: Should I use UUID or ULID?</div>
+    <div class="faq-a">UUIDs are universally supported and well-understood. ULIDs are sortable by creation time, which is useful for database indexing. Choose UUID for compatibility, ULID for time-ordered requirements.</div>
+  </div>
+</div>

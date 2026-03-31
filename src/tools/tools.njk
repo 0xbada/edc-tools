@@ -6,4 +6,4 @@ pagination:
 permalink: "/{{ tool.category }}/{{ tool.slug }}/"
 layout: tool-layout.njk
 ---
-{{ tool.name }} is a free online tool to {{ tool.description | lower }}. All processing happens locally in your browser — no data is sent to any server.
+{% include "seo/" + tool.slug + ".njk" %}

@@ -1,0 +1,17 @@
+<h2>About URL Encoder/Decoder</h2>
+<p>URL encoding (also called percent-encoding) converts special characters into a format that can be safely transmitted in URLs. Characters like spaces, ampersands, and equals signs are replaced with percent-encoded equivalents (e.g., space becomes <code>%20</code>). This tool uses JavaScript's built-in <code>encodeURIComponent()</code> and <code>encodeURI()</code> functions.</p>
+
+<div class="faq">
+  <div class="faq-item">
+    <div class="faq-q">Q: What's the difference between Encode and Encode Full URL?</div>
+    <div class="faq-a">Encode uses <code>encodeURIComponent()</code> which encodes all special characters including <code>/</code>, <code>?</code>, and <code>&</code>. Encode Full URL uses <code>encodeURI()</code> which preserves URL structure characters, making it suitable for encoding complete URLs.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q: When should I use URL encoding?</div>
+    <div class="faq-a">Use URL encoding when passing user input as query parameters, embedding special characters in URLs, or working with API requests that require percent-encoded values.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q: Is my data sent to any server?</div>
+    <div class="faq-a">No. All encoding and decoding happens entirely in your browser using JavaScript. No data is transmitted to any server.</div>
+  </div>
+</div>

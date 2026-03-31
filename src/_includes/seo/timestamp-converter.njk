@@ -1,0 +1,17 @@
+<h2>About Timestamp Converter</h2>
+<p>Unix timestamps represent time as the number of seconds (or milliseconds) since January 1, 1970 UTC (the Unix epoch). This tool converts between Unix timestamps and human-readable date formats. It auto-detects whether the input is in seconds or milliseconds and displays results in UTC, ISO 8601, and your local timezone.</p>
+
+<div class="faq">
+  <div class="faq-item">
+    <div class="faq-q">Q: How does it detect seconds vs. milliseconds?</div>
+    <div class="faq-a">If the number is greater than 9,999,999,999 it's treated as milliseconds; otherwise as seconds. This threshold corresponds to November 2286, which safely covers all practical use cases.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q: What date formats does "To Timestamp" accept?</div>
+    <div class="faq-a">It accepts any format that JavaScript's <code>Date</code> constructor understands, including ISO 8601 (<code>2024-01-15T10:30:00Z</code>), RFC 2822, and common formats like <code>Jan 15, 2024</code>.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q: Why does "Local" show a different time than UTC?</div>
+    <div class="faq-a">Local time reflects your browser's timezone setting. The difference is your UTC offset. UTC is the universal reference time used in servers and APIs.</div>
+  </div>
+</div>

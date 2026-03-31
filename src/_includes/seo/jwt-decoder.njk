@@ -1,0 +1,21 @@
+<h2>About JWT Decoder</h2>
+<p>JSON Web Tokens (JWT) are a compact, URL-safe way to represent claims between two parties. A JWT consists of three parts separated by dots: header, payload, and signature. This tool decodes the header and payload, displays them as formatted JSON, and automatically converts Unix timestamps (exp, iat, nbf) to human-readable dates.</p>
+
+<div class="faq">
+  <div class="faq-item">
+    <div class="faq-q">Q: Does this tool verify the JWT signature?</div>
+    <div class="faq-a">No. This is a decode-only tool. Signature verification requires the secret key or public key, which should never be shared with a client-side tool. Use this for inspecting token contents only.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q: What are the exp, iat, and nbf fields?</div>
+    <div class="faq-a"><code>exp</code> (expiration time) is when the token expires. <code>iat</code> (issued at) is when it was created. <code>nbf</code> (not before) is the earliest time the token is valid. All are Unix timestamps.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q: Is it safe to paste my JWT here?</div>
+    <div class="faq-a">Yes. All decoding happens in your browser — nothing is sent to any server. However, remember that JWTs are not encrypted; anyone with the token can read its contents. Treat them as sensitive.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q: Where do I find my JWT token?</div>
+    <div class="faq-a">JWTs are typically found in HTTP Authorization headers (as <code>Bearer &lt;token&gt;</code>), browser cookies, or localStorage. Check your browser's DevTools Network tab or Application tab.</div>
+  </div>
+</div>

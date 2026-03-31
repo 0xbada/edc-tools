@@ -124,6 +124,34 @@
   padding-top: 24px;
 }
 
+/* === SEO Content === */
+.tool-info h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+.tool-info p {
+  margin-bottom: 12px;
+}
+.faq {
+  margin-top: 24px;
+}
+.faq-item {
+  margin-bottom: 16px;
+}
+.faq-q {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.faq-a {
+  font-size: 12px;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
 /* === Responsive === */
 @media (max-width: 768px) {
   .panels {

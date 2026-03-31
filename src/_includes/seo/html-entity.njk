@@ -1,0 +1,17 @@
+<h2>About HTML Entity Encoder/Decoder</h2>
+<p>HTML entities are special codes used to represent reserved characters in HTML. Characters like <code>&lt;</code>, <code>&gt;</code>, <code>&amp;</code>, and <code>&quot;</code> have special meaning in HTML and must be encoded to display correctly. This tool converts between raw characters and their HTML entity equivalents.</p>
+
+<div class="faq">
+  <div class="faq-item">
+    <div class="faq-q">Q: Which characters get encoded?</div>
+    <div class="faq-a">The encoder converts the five characters that have special meaning in HTML: <code>&amp;</code> → <code>&amp;amp;</code>, <code>&lt;</code> → <code>&amp;lt;</code>, <code>&gt;</code> → <code>&amp;gt;</code>, <code>"</code> → <code>&amp;quot;</code>, and <code>'</code> → <code>&amp;#39;</code>.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q: When should I use HTML entity encoding?</div>
+    <div class="faq-a">Always encode user-generated content before inserting it into HTML to prevent XSS (Cross-Site Scripting) attacks. It's also needed when displaying code snippets or special characters in web pages.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q: Does the decoder handle numeric entities like <code>&amp;#8364;</code>?</div>
+    <div class="faq-a">Yes. The decoder handles both named entities (like <code>&amp;amp;</code>) and numeric entities (like <code>&amp;#8364;</code> for €) by leveraging the browser's built-in HTML parser.</div>
+  </div>
+</div>
