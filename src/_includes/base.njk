@@ -12,17 +12,19 @@
   {% block head %}{% endblock %}
 </head>
 <body>
-  <nav class="nav">
-    <a href="/" class="nav-logo">DHD TOOLS</a>
-    <div class="nav-links">
-      {%- for cat in categories %}
-      <a href="/{{ cat.slug }}/">{{ cat.name }}</a>
-      {%- endfor %}
+  <header class="header">
+    <nav class="nav">
+      <a href="/" class="nav-logo">DHD TOOLS</a>
+      <div class="nav-links">
+        {%- for cat in categories %}
+        <a href="/{{ cat.slug }}/">{{ cat.name }}</a>
+        {%- endfor %}
+      </div>
+    </nav>
+    <div class="ua-bar" id="ua-bar" title="Click to copy">
+      <span id="ua-text"></span>
     </div>
-  </nav>
-  <div class="ua-bar" id="ua-bar" title="Click to copy">
-    <span id="ua-text"></span>
-  </div>
+  </header>
   <script>
     (function() {
       var el = document.getElementById('ua-text');
