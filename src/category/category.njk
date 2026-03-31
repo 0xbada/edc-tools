@@ -1,12 +1,17 @@
 ---
+pagination:
+  data: categories
+  size: 1
+  alias: cat
+permalink: "/{{ cat.slug }}/"
 layout: base.njk
-title: Developer Tools
-description: Free online developer utility tools. URL encoder, hash generator, JSON formatter and more.
-permalink: /
 ---
-{% for cat in categories %}
+{% set title = cat.name + " Tools" %}
+{% set description = cat.description %}
+
 <div class="category-group">
   <h2 class="category-title">{{ cat.name }}</h2>
+  <p style="color: var(--text-dim); font-size: 13px; margin-bottom: 20px;">{{ cat.description }}</p>
   <div class="tool-grid">
     {% for tool in tools | toolsByCategory(cat.slug) %}
     <a href="/{{ tool.category }}/{{ tool.slug }}/" class="tool-card">
@@ -16,4 +21,3 @@ permalink: /
     {% endfor %}
   </div>
 </div>
-{% endfor %}
