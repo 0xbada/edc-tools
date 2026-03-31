@@ -115,6 +115,11 @@
   color: var(--text);
 }
 
+/* === Ad Slot === */
+.ad-slot {
+  margin: 24px 0;
+}
+
 /* === SEO Footer === */
 .tool-info {
   color: var(--text-dim);
