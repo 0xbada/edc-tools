@@ -1,0 +1,6 @@
+[
+  { "name": "Encoding", "slug": "encoding", "description": "Text encoding and decoding tools" },
+  { "name": "Crypto", "slug": "crypto", "description": "Hashing and cryptographic tools" },
+  { "name": "Formatter", "slug": "formatter", "description": "Code formatting and validation" },
+  { "name": "Converter", "slug": "converter", "description": "Data format conversion tools" }
+]

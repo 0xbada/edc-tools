@@ -1,0 +1,42 @@
+[
+  {
+    "name": "URL Encoder/Decoder",
+    "slug": "url-encoder",
+    "category": "encoding",
+    "description": "Encode or decode URL components",
+    "keywords": ["url", "percent encoding", "encodeURIComponent"],
+    "script": "url-encoder.js"
+  },
+  {
+    "name": "Base64 Encoder/Decoder",
+    "slug": "base64",
+    "category": "encoding",
+    "description": "Encode or decode Base64 strings",
+    "keywords": ["base64", "btoa", "atob"],
+    "script": "base64.js"
+  },
+  {
+    "name": "Hash Generator",
+    "slug": "hash-generator",
+    "category": "crypto",
+    "description": "Generate MD5, SHA-1, SHA-256, SHA-512 hashes",
+    "keywords": ["hash", "md5", "sha", "checksum"],
+    "script": "hash-generator.js"
+  },
+  {
+    "name": "JSON Formatter",
+    "slug": "json-formatter",
+    "category": "formatter",
+    "description": "Format and validate JSON data",
+    "keywords": ["json", "format", "validate", "pretty print"],
+    "script": "json-formatter.js"
+  },
+  {
+    "name": "Timestamp Converter",
+    "slug": "timestamp-converter",
+    "category": "converter",
+    "description": "Convert between Unix timestamps and human-readable dates",
+    "keywords": ["timestamp", "unix", "epoch", "date"],
+    "script": "timestamp-converter.js"
+  }
+]
