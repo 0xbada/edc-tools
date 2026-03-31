@@ -123,8 +123,9 @@
 /* === SEO Footer === */
 .tool-info {
   color: var(--text-dim);
-  font-size: 12px;
-  line-height: 1.6;
+  font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', var(--font-sans);
+  font-size: 13px;
+  line-height: 1.8;
   border-top: 1px solid var(--border);
   padding-top: 24px;
 }

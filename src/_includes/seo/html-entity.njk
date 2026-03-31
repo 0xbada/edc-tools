@@ -1,17 +1,17 @@
-<h2>About HTML Entity Encoder/Decoder</h2>
-<p>HTML entities are special codes used to represent reserved characters in HTML. Characters like <code>&lt;</code>, <code>&gt;</code>, <code>&amp;</code>, and <code>&quot;</code> have special meaning in HTML and must be encoded to display correctly. This tool converts between raw characters and their HTML entity equivalents.</p>
+<h2>HTML Entity Encoder/Decoder란?</h2>
+<p>HTML 엔티티는 HTML에서 예약된 문자를 표현하기 위한 특수 코드입니다. <code>&lt;</code>, <code>&gt;</code>, <code>&amp;</code>, <code>&quot;</code> 같은 문자는 HTML에서 특별한 의미를 가지므로, 화면에 그대로 표시하려면 엔티티로 인코딩해야 합니다. 이 도구는 원본 문자와 HTML 엔티티 간의 변환을 수행합니다.</p>
 
 <div class="faq">
   <div class="faq-item">
-    <div class="faq-q">Q: Which characters get encoded?</div>
-    <div class="faq-a">The encoder converts the five characters that have special meaning in HTML: <code>&amp;</code> → <code>&amp;amp;</code>, <code>&lt;</code> → <code>&amp;lt;</code>, <code>&gt;</code> → <code>&amp;gt;</code>, <code>"</code> → <code>&amp;quot;</code>, and <code>'</code> → <code>&amp;#39;</code>.</div>
+    <div class="faq-q">Q: 어떤 문자가 인코딩되나요?</div>
+    <div class="faq-a">HTML에서 특별한 의미를 가지는 5개 문자를 인코딩합니다: <code>&amp;</code> → <code>&amp;amp;</code>, <code>&lt;</code> → <code>&amp;lt;</code>, <code>&gt;</code> → <code>&amp;gt;</code>, <code>"</code> → <code>&amp;quot;</code>, <code>'</code> → <code>&amp;#39;</code>.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Q: When should I use HTML entity encoding?</div>
-    <div class="faq-a">Always encode user-generated content before inserting it into HTML to prevent XSS (Cross-Site Scripting) attacks. It's also needed when displaying code snippets or special characters in web pages.</div>
+    <div class="faq-q">Q: HTML 엔티티 인코딩은 언제 사용하나요?</div>
+    <div class="faq-a">사용자가 입력한 내용을 HTML에 삽입할 때 XSS(크로스 사이트 스크립팅) 공격을 방지하기 위해 반드시 인코딩해야 합니다. 웹 페이지에서 코드 스니펫이나 특수 문자를 표시할 때도 필요합니다.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Q: Does the decoder handle numeric entities like <code>&amp;#8364;</code>?</div>
-    <div class="faq-a">Yes. The decoder handles both named entities (like <code>&amp;amp;</code>) and numeric entities (like <code>&amp;#8364;</code> for €) by leveraging the browser's built-in HTML parser.</div>
+    <div class="faq-q">Q: <code>&amp;#8364;</code> 같은 숫자 엔티티도 디코딩되나요?</div>
+    <div class="faq-a">네. 이름 엔티티(<code>&amp;amp;</code>)와 숫자 엔티티(<code>&amp;#8364;</code> = €) 모두 브라우저의 내장 HTML 파서를 활용하여 디코딩합니다.</div>
   </div>
 </div>

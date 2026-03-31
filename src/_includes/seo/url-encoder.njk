@@ -1,17 +1,17 @@
-<h2>About URL Encoder/Decoder</h2>
-<p>URL encoding (also called percent-encoding) converts special characters into a format that can be safely transmitted in URLs. Characters like spaces, ampersands, and equals signs are replaced with percent-encoded equivalents (e.g., space becomes <code>%20</code>). This tool uses JavaScript's built-in <code>encodeURIComponent()</code> and <code>encodeURI()</code> functions.</p>
+<h2>URL Encoder/Decoder란?</h2>
+<p>URL 인코딩(퍼센트 인코딩)은 URL에서 안전하게 사용할 수 없는 특수 문자를 <code>%XX</code> 형식으로 변환하는 방식입니다. 예를 들어 공백은 <code>%20</code>, 앰퍼샌드는 <code>%26</code>으로 변환됩니다. 이 도구는 JavaScript의 <code>encodeURIComponent()</code>와 <code>encodeURI()</code> 함수를 사용합니다.</p>
 
 <div class="faq">
   <div class="faq-item">
-    <div class="faq-q">Q: What's the difference between Encode and Encode Full URL?</div>
-    <div class="faq-a">Encode uses <code>encodeURIComponent()</code> which encodes all special characters including <code>/</code>, <code>?</code>, and <code>&</code>. Encode Full URL uses <code>encodeURI()</code> which preserves URL structure characters, making it suitable for encoding complete URLs.</div>
+    <div class="faq-q">Q: Encode와 Encode Full URL의 차이는?</div>
+    <div class="faq-a">Encode는 <code>encodeURIComponent()</code>를 사용해 <code>/</code>, <code>?</code>, <code>&</code> 등 모든 특수 문자를 인코딩합니다. Encode Full URL은 <code>encodeURI()</code>를 사용해 URL 구조 문자는 보존하면서 나머지만 인코딩하므로, 전체 URL을 인코딩할 때 적합합니다.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Q: When should I use URL encoding?</div>
-    <div class="faq-a">Use URL encoding when passing user input as query parameters, embedding special characters in URLs, or working with API requests that require percent-encoded values.</div>
+    <div class="faq-q">Q: URL 인코딩은 언제 사용하나요?</div>
+    <div class="faq-a">사용자 입력을 쿼리 파라미터로 전달하거나, URL에 특수 문자를 포함해야 하거나, 퍼센트 인코딩이 필요한 API 요청을 작성할 때 사용합니다.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Q: Is my data sent to any server?</div>
-    <div class="faq-a">No. All encoding and decoding happens entirely in your browser using JavaScript. No data is transmitted to any server.</div>
+    <div class="faq-q">Q: 입력한 데이터가 서버로 전송되나요?</div>
+    <div class="faq-a">아니요. 모든 인코딩과 디코딩은 브라우저에서 JavaScript로 처리됩니다. 어떤 데이터도 외부 서버로 전송되지 않습니다.</div>
   </div>
 </div>

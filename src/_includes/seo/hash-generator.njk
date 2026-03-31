@@ -1,17 +1,17 @@
-<h2>About Hash Generator</h2>
-<p>Cryptographic hash functions take an input of any size and produce a fixed-length output (digest). This tool supports MD5, SHA-1, SHA-256, and SHA-512. SHA-256 and SHA-512 use the browser's built-in Web Crypto API for fast, native performance. Hashing is a one-way operation — you cannot reverse a hash back to the original input.</p>
+<h2>Hash Generator란?</h2>
+<p>해시 함수는 임의 크기의 입력을 고정 길이의 출력(다이제스트)으로 변환합니다. 이 도구는 MD5, SHA-1, SHA-256, SHA-512를 지원합니다. SHA-256과 SHA-512는 브라우저의 Web Crypto API를 사용하여 빠르고 안정적으로 처리됩니다. 해싱은 단방향 연산이므로 해시값에서 원본 데이터를 복원할 수 없습니다.</p>
 
 <div class="faq">
   <div class="faq-item">
-    <div class="faq-q">Q: Which hash algorithm should I use?</div>
-    <div class="faq-a">For security purposes, use SHA-256 or SHA-512. MD5 and SHA-1 are considered cryptographically broken and should only be used for checksums or non-security purposes like cache keys.</div>
+    <div class="faq-q">Q: 어떤 해시 알고리즘을 사용해야 하나요?</div>
+    <div class="faq-a">보안 목적이라면 SHA-256이나 SHA-512를 사용하세요. MD5와 SHA-1은 보안적으로 취약한 것으로 알려져 있어, 체크섬이나 캐시 키 같은 비보안 용도에만 사용하는 것이 좋습니다.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Q: Can I decrypt a hash?</div>
-    <div class="faq-a">No. Hash functions are one-way by design — there is no mathematical way to reverse the process. Tools that "decrypt" hashes actually use precomputed lookup tables (rainbow tables).</div>
+    <div class="faq-q">Q: 해시를 복호화할 수 있나요?</div>
+    <div class="faq-a">아니요. 해시 함수는 설계상 단방향입니다. 해시를 "복호화"하는 도구들은 사전에 계산된 레인보우 테이블을 사용하는 것이지, 수학적으로 역변환하는 것이 아닙니다.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Q: Why does MD5 produce a different result than other online tools?</div>
-    <div class="faq-a">Ensure you're comparing the same input encoding. This tool encodes input as UTF-8 before hashing. Some tools may use different encodings, which will produce different hash values for non-ASCII text.</div>
+    <div class="faq-q">Q: 다른 도구와 MD5 결과가 다른 이유는?</div>
+    <div class="faq-a">입력 인코딩이 동일한지 확인하세요. 이 도구는 입력을 UTF-8로 인코딩한 후 해싱합니다. 다른 도구가 다른 인코딩을 사용하면 비ASCII 텍스트에서 다른 해시값이 나올 수 있습니다.</div>
   </div>
 </div>

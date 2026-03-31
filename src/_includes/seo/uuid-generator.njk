@@ -1,17 +1,17 @@
-<h2>About UUID Generator</h2>
-<p>A UUID (Universally Unique Identifier) is a 128-bit identifier that is practically guaranteed to be unique across space and time. This tool generates version 4 UUIDs, which are based on random numbers using the browser's cryptographically secure <code>crypto.randomUUID()</code> API. UUIDs are widely used as database primary keys, session IDs, and distributed system identifiers.</p>
+<h2>UUID Generator란?</h2>
+<p>UUID(Universally Unique Identifier)는 공간과 시간에 걸쳐 사실상 고유함이 보장되는 128비트 식별자입니다. 이 도구는 브라우저의 암호학적으로 안전한 <code>crypto.randomUUID()</code> API를 사용하여 버전 4 UUID를 생성합니다. UUID는 데이터베이스 기본 키, 세션 ID, 분산 시스템 식별자 등으로 널리 사용됩니다.</p>
 
 <div class="faq">
   <div class="faq-item">
-    <div class="faq-q">Q: What is UUID v4?</div>
-    <div class="faq-a">UUID v4 is generated using random or pseudo-random numbers. It's the most commonly used version because it requires no coordination between systems. The format is <code>xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx</code> where <code>4</code> indicates version 4.</div>
+    <div class="faq-q">Q: UUID v4란 무엇인가요?</div>
+    <div class="faq-a">UUID v4는 난수를 기반으로 생성됩니다. 시스템 간 조율이 필요 없어 가장 널리 사용되는 버전입니다. 형식은 <code>xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx</code>이며 <code>4</code>가 버전 4를 나타냅니다.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Q: Can two UUIDs ever collide?</div>
-    <div class="faq-a">Theoretically yes, but the probability is astronomically low. You would need to generate about 2.71 quintillion UUIDs to have a 50% chance of a single collision. For practical purposes, they are unique.</div>
+    <div class="faq-q">Q: UUID가 중복될 수 있나요?</div>
+    <div class="faq-a">이론적으로는 가능하지만, 확률은 천문학적으로 낮습니다. 50%의 충돌 확률을 갖기 위해서는 약 2.71 x 10^18개의 UUID를 생성해야 합니다. 실무에서는 고유하다고 볼 수 있습니다.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Q: Should I use UUID or ULID?</div>
-    <div class="faq-a">UUIDs are universally supported and well-understood. ULIDs are sortable by creation time, which is useful for database indexing. Choose UUID for compatibility, ULID for time-ordered requirements.</div>
+    <div class="faq-q">Q: UUID와 ULID 중 어떤 것을 써야 하나요?</div>
+    <div class="faq-a">UUID는 범용적으로 지원되고 널리 알려져 있습니다. ULID는 생성 시간 순으로 정렬이 가능해 데이터베이스 인덱싱에 유리합니다. 호환성이 중요하면 UUID, 시간 순서가 필요하면 ULID를 선택하세요.</div>
   </div>
 </div>

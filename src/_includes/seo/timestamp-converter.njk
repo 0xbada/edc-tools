@@ -1,17 +1,17 @@
-<h2>About Timestamp Converter</h2>
-<p>Unix timestamps represent time as the number of seconds (or milliseconds) since January 1, 1970 UTC (the Unix epoch). This tool converts between Unix timestamps and human-readable date formats. It auto-detects whether the input is in seconds or milliseconds and displays results in UTC, ISO 8601, and your local timezone.</p>
+<h2>Timestamp Converter란?</h2>
+<p>Unix 타임스탬프는 1970년 1월 1일 UTC(Unix 에포크) 이후 경과한 초(또는 밀리초)로 시간을 표현합니다. 이 도구는 Unix 타임스탬프와 사람이 읽을 수 있는 날짜 형식 간의 변환을 지원합니다. 입력이 초 단위인지 밀리초 단위인지 자동으로 감지하며, UTC, ISO 8601, 로컬 타임존으로 결과를 표시합니다.</p>
 
 <div class="faq">
   <div class="faq-item">
-    <div class="faq-q">Q: How does it detect seconds vs. milliseconds?</div>
-    <div class="faq-a">If the number is greater than 9,999,999,999 it's treated as milliseconds; otherwise as seconds. This threshold corresponds to November 2286, which safely covers all practical use cases.</div>
+    <div class="faq-q">Q: 초와 밀리초를 어떻게 구분하나요?</div>
+    <div class="faq-a">숫자가 9,999,999,999보다 크면 밀리초, 그렇지 않으면 초로 처리합니다. 이 기준값은 2286년 11월에 해당하므로 실무에서 문제가 될 일은 없습니다.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Q: What date formats does "To Timestamp" accept?</div>
-    <div class="faq-a">It accepts any format that JavaScript's <code>Date</code> constructor understands, including ISO 8601 (<code>2024-01-15T10:30:00Z</code>), RFC 2822, and common formats like <code>Jan 15, 2024</code>.</div>
+    <div class="faq-q">Q: "To Timestamp"은 어떤 날짜 형식을 받나요?</div>
+    <div class="faq-a">JavaScript의 <code>Date</code> 생성자가 이해할 수 있는 모든 형식을 지원합니다. ISO 8601(<code>2024-01-15T10:30:00Z</code>), RFC 2822, 그리고 <code>Jan 15, 2024</code> 같은 일반적인 형식이 모두 가능합니다.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Q: Why does "Local" show a different time than UTC?</div>
-    <div class="faq-a">Local time reflects your browser's timezone setting. The difference is your UTC offset. UTC is the universal reference time used in servers and APIs.</div>
+    <div class="faq-q">Q: Local 시간이 UTC와 다른 이유는?</div>
+    <div class="faq-a">Local 시간은 브라우저의 타임존 설정을 반영합니다. 차이는 UTC 오프셋 때문이며, UTC는 서버와 API에서 사용하는 세계 표준 시간입니다.</div>
   </div>
 </div>

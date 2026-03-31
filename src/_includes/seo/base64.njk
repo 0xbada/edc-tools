@@ -1,17 +1,17 @@
-<h2>About Base64 Encoder/Decoder</h2>
-<p>Base64 is a binary-to-text encoding scheme that represents binary data as ASCII strings. It's commonly used for embedding images in CSS/HTML, encoding data in URLs, transmitting binary data over text-based protocols like email (MIME), and storing complex data in JSON or XML. This tool supports UTF-8 text.</p>
+<h2>Base64 Encoder/Decoder란?</h2>
+<p>Base64는 바이너리 데이터를 ASCII 텍스트로 변환하는 인코딩 방식입니다. CSS/HTML에 이미지를 임베딩하거나, 이메일(MIME) 등 텍스트 기반 프로토콜로 바이너리 데이터를 전송하거나, JSON이나 XML에 복잡한 데이터를 저장할 때 널리 사용됩니다. 이 도구는 UTF-8 텍스트를 지원합니다.</p>
 
 <div class="faq">
   <div class="faq-item">
-    <div class="faq-q">Q: Does this tool support non-ASCII characters?</div>
-    <div class="faq-a">Yes. The encoder handles UTF-8 text correctly by first converting to UTF-8 bytes before Base64 encoding, so characters like emoji and CJK text work properly.</div>
+    <div class="faq-q">Q: 한글이나 이모지도 인코딩할 수 있나요?</div>
+    <div class="faq-a">네. 인코딩 전에 UTF-8 바이트로 변환하기 때문에 한글, 일본어, 이모지 등 모든 유니코드 문자가 정상적으로 처리됩니다.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Q: What's the difference between Base64 and Base64URL?</div>
-    <div class="faq-a">Standard Base64 uses <code>+</code> and <code>/</code> as special characters, while Base64URL replaces them with <code>-</code> and <code>_</code> to be URL-safe. This tool uses standard Base64.</div>
+    <div class="faq-q">Q: Base64와 Base64URL의 차이는?</div>
+    <div class="faq-a">표준 Base64는 <code>+</code>와 <code>/</code>를 사용하지만, Base64URL은 이를 <code>-</code>와 <code>_</code>로 대체하여 URL에서 안전하게 사용할 수 있습니다. 이 도구는 표준 Base64를 사용합니다.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Q: Why does Base64 increase the data size?</div>
-    <div class="faq-a">Base64 encodes 3 bytes of binary data into 4 ASCII characters, resulting in roughly 33% size increase. This overhead is the trade-off for safe text-based transmission.</div>
+    <div class="faq-q">Q: Base64로 인코딩하면 왜 크기가 커지나요?</div>
+    <div class="faq-a">Base64는 3바이트의 바이너리 데이터를 4개의 ASCII 문자로 변환하므로 약 33% 크기가 증가합니다. 이는 텍스트 기반 전송을 위한 트레이드오프입니다.</div>
   </div>
 </div>
