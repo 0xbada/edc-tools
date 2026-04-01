@@ -14,6 +14,14 @@ eleventyExcludeFromCollections: true
     <priority>0.7</priority>
   </url>
   {%- endfor %}
+  <url>
+    <loc>https://tools.devhackdebug.com/about/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tools.devhackdebug.com/privacy/</loc>
+    <priority>0.3</priority>
+  </url>
   {%- for tool in tools %}
   <url>
     <loc>https://tools.devhackdebug.com/{{ tool.category }}/{{ tool.slug }}/</loc>
